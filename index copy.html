@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+
+  
+  <body>
+    <div class="container-fluid overflow-hidden">
+      <div class="row vh-100 overflow-auto">
+        
+        <div class="col d-flex flex-column h-sm-100">
+          <main class="row overflow-auto">
+            <div class="col">
+              <h1 class="display-3 text-center">
+                Circuits
+              </h1>
+              <div class="d-flex justify-content-center">
+                <form class="loading" action="/search/" method="get">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </main>
+          <footer class="footer row mt-auto align-items-end justify-content-end text-muted">
+            <div class="col"></div>
+            <div class="col-auto text-center">
+              Powered by
+              <img src="{% static 'images/gloo_logo.png' %}" class="rounded my-2" alt="GLOO">
+            </div>
+            <div class="col text-end me-4">
+              <div>
+                version: [version_number]
+              </div>
+            </div>
+          </footer>
+          <br>
+        </div>
+        <div class="sidebar d-flex flex-column flex-shrink-0 p-3" style="width: 240px;">
+            <a href="#" class="navbar-brand d-flex align-items-center mb-3">
+              BRAND NAME
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="mb-1">
+                <a class="btn btn-toggle d-flex align-items-center rounded collapsed text-white" data-bs-toggle="collapse" data-bs-target="#csd-menu">
+                  <span class="mif-books mif-3x ms-1 me-2"></span> Create New...
+                </a>
+                <div class="collapse" id="csd-menu">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">Site</a></li>
+                    <li><a href="#" class="link-dark rounded">System</a></li>
+                    <li><a href="#" class="link-dark rounded">CSD</a></li>
+                    <li><a href="#" class="link-dark rounded">Circuit</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <a class="btn d-flex align-items-center rounded text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-diagram-3 me-2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                  </svg> Systems
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <div class="nav-link dropdown">
+              <a href="#" class="d-flex align-items-center text-danger text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+                <h3>
+                  <strong>
+                                  Login
+                              </strong>
+                </h3>
+              </a>
+              <div class="dropdown-menu login-menu bg-secondary text-white shadow">
+                <form action='/users/login_user/' method='POST' id="form-login-user">
+                  <div class="mb-1">
+                    <input type="username" class="form-control" id="username" placeholder="username">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+            <ul class="nav nav-pills flex-column">
+              <li class="mb-1">
+                <a class="btn d-flex align-items-center rounded text-white">
+                          Documentation
+                      </a>
+              </li>
+              <li class="mb-1">
+                <a class="btn d-flex align-items-center rounded text-white">
+                          Help
+                      </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    {% csrf_token %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Scroll Spy Navigation -->
+    <nav id="navbar" class="navbar position-fixed  top-50 translate-middle  d-flex justify-content-end  ">
+        <div class="d-flex  flex-md-column ">
+            <div class="p-1">
+                <button type="button" class="btn btn-negro">Trabaja Con Nosotros</button>
+            </div>
+            <div class="p-1">
+                <button type="button" class="btn btn-rojo">Contactanos</button>
+            </div>
+
+        </div>
+
+        <ul class="nav nav-pills list-group p-2 text-white ">
+            <li class="nav-item ">
+                <a class="nav-link " href="#Inicio">inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contactactos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Footer</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="button-group position-fixed d-flex  flex-md-column posicion">
+        <a href="/" class="m-1">
+            <img src="src/img/LOGOCONSOMBRA2.png" alt="">
+        </a>
+        <a href="#" class=" btn-lateral m-1">
+            <i class="fas fa-bars fa-2xl"></i>
+        </a>
+
+        <a href="#" class=" btn-lateral m-1">
+            <i class="fas fa-envelope fa-2xl"></i>
+        </a>
+
+        <a href="#" class=" btn-lateral m-1">
+            <i class="fas fa-search fa-2xl"></i>
+        </a>
+
+        
+    </div>
+
+    <div class="offcanvas offcanvas-start" id="intro">
+        <div class="offcanvas-header">
+            <div class="offcanvas-tittle">
+                <button class="btn " data-bs-dismiss="offcanvas"> x</button>
+            </div>
+            <div class="offcanvas-body">
+                <p> lorem</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scroll Spy Main Content -->
+    <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+        class="scrollspy-example" tabindex="0">
+
+        <!-- Hero Section Start -->
+        <section id="Inicio" class="section Inicio " >
+            <div class="container position-absolute top-50 start-50 translate-middle">
+                <h1>Inicio</h1>
+                <p>Alineado a nuestra estrategia de sostenibilidad, llegó el EcoSaco, empaque disgregable 
+                    para mezclas de concreto que el maestro de obra puede introducir directamente al trompo.
+                     Este disminuye la generación de residuos, aporta al ambiente y no afecta la calidad o 
+                     resistencia de las estructuras.</p>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- About Section Start -->
+        <section id="about" class="section about">
+            <h1>About Section</h1>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Portfolio Section Start -->
+        <section id="portfolio" class="section">
+            <h1>Portfolio Section</h1>
+        </section>
+        <!-- Portfolio Section End -->
+
+        <!-- Contact Section Start -->
+        <section id="contact" class="section">
+            <h1>Contact Section</h1>
+        </section>
+        <!-- Contact Section End -->
+
+        <!-- Footer Section Start -->
+        <section id="footer" class="section">
+            <h1>Footer Section</h1>
+        </section>
+        <!-- Footer Section End -->
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
