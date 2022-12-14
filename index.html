@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Terralpa</title>
     <link href="src/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -14,58 +14,82 @@
 
 </head>
 
-<body>
-
-
-
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- Scroll Spy Main Content -->
     <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
         class="scrollspy-example" tabindex="0">
 
-        <!-- Hero Section Start -->
+        <!-- SLIDER SECTION -->
+        <section id="inicio-slider" class="section  ">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
 
-        <div id="inicio-slider" class="carousel slide inicio-slider" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#inicio-slider" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#inicio-slider" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#inicio-slider" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                    <div class="carousel-item active img-1">
+                        <div class="carousel-caption  top-50  text-justify">
+                            <div class="container d-flex flex-column">
+                                <h2 class="fw-bold">Terralpa</h2>
+                                <p class="d-flex flex-row ">Alineado a nuestra estrategia de sostenibilidad, llegó
+                                    Terralpa,
+                                    empaque disgregable para mezclas de concreto que el maestro de obra puede introducir
+                                    directamente al trompo.
+                                    ste disminuye la generación de residuos, aporta al ambiente y no afecta la calidad o
+                                    resistencia de las estructuras.</p>
+                                <a href="#" class="stretched-link text-light">Ver mas...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item img-2">
+                        <div class="carousel-caption d-none d-md-block top-50">
+                            <div class="container d-flex flex-column">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item img-3">
+                        <div class="carousel-caption d-none d-md-block top-50">
+                            <div class="container d-flex flex-column">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active section img-1">
 
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item img-2">
-
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item img-3">
-
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-
-        <!-- Hero Section End -->
+        </section>
+        <!-- SLIDER SECTION -->
 
         <!-- About Section Start -->
-        <section id="about" class="section about">
+        <section id="about" class="section about ">
+            <div class="d-flex flex-column min-vh-100 text-light">
+                <div class="contenedor-2">
+                    <h2 class="fw-bold">Ayudanos a Construir un Futuro que Todos Anelamos</h2>
+                </div>
+                <div class="d-flex bd-highlight mt-auto">
 
-
-
+                    <button class="btnhover flex-fill bd-highlight p-4 btn btn1 text-light">| Vision y Mision
+                        <img src="src/icons/flecha-derecha.png" alt="">
+                    </button>
+                    <button class="btnhover flex-fill bd-highlight p-4 btn btn2 text-light ">| Historia <img
+                            src="src/icons/flecha-derecha.png" alt=""></button>
+                    <button class="btnhover flex-fill bd-highlight p-4 btn btn3 text-light">| Nosotros <img
+                            src="src/icons/flecha-derecha.png" alt=""></button>
+                    <button class="btnhover flex-fill bd-highlight p-4 btn btn4 text-light">| Nuestra Cultura <img
+                            src="src/icons/flecha-derecha.png" alt=""></button>
+                </div>
+            </div>
         </section>
         <!-- About Section End -->
 
@@ -90,37 +114,23 @@
     </main>
 
     <!-- Scroll Spy Navigation -->
-    <nav id="navbar" class="navbar position-fixed d-flex  top-uo  ">
+    <nav id="navbar" class="navbar position-fixed d-flex  top-uo">
         <div class="container-fluid ">
-            <div class="seccion-2 ">
-                <div class="button-group d-flex  flex-md-column posicion">
-                    <a href="/" class="m-1">
-                        <img src="src/img/LOGOCONSOMBRA2.png" alt="">
-                    </a>
-                    <a href="#" class=" btn-lateral m-1">
-                        <i class="fas fa-bars fa-2xl"></i>
-                    </a>
+            <div class="button-group d-flex flex-md-column align-content-center flex-wrap">
+                <a href="/" class="m-1">
+                    <img src="src/img/LOGOCONSOMBRA2.png" alt="">
+                </a>
+                <a href="#" class="btn-lateral m-1">
+                    <i class="fas fa-bars fa-2xl"></i>
+                </a>
 
-                    <a href="#" class=" btn-lateral m-1">
-                        <i class="fas fa-envelope fa-2xl"></i>
-                    </a>
+                <a href="#" class="btn-lateral m-1">
+                    <i class="fas fa-envelope fa-2xl"></i>
+                </a>
 
-                    <a href="#" class=" btn-lateral m-1">
-                        <i class="fas fa-search fa-2xl"></i>
-                    </a>
-                </div>
-
-                <div class="offcanvas offcanvas-start " id="intro">
-                    <div class="offcanvas-header">
-                        <div class="offcanvas-tittle">
-                            <button class="btn " data-bs-dismiss="offcanvas"> x</button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <p> lorem</p>
-                        </div>
-                    </div>
-
-                </div>
+                <a href="#" class="btn-lateral m-1">
+                    <i class="fas fa-search fa-2xl"></i>
+                </a>
             </div>
             <div class="seccion-1  position-fixed top-50 end-0 translate-middle-y">
                 <div class="">
@@ -131,37 +141,34 @@
                         <button type="button" class="btn btn-rojo">Contactanos</button>
                     </div>
 
-                </div>
+                    <ul class="nav nav-pills list-group p-2 text-white ">
+                        <li class="nav-item ">
+                            <a class="nav-link invisible " href="#inicio-slider">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contactactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Footer</a>
+                        </li>
+                    </ul>
 
-                <ul class="nav nav-pills list-group p-2 text-white ">
-                    <li class="nav-item ">
-                        <a class="nav-link invisible " href="#inicio-slider">inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contactactos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer">Footer</a>
-                    </li>
-                </ul>
+                </div>
             </div>
-           
+
         </div>
     </nav>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

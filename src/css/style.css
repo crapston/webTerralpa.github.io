@@ -1,14 +1,29 @@
+
 @font-face {
     font-family: CodePredators;
     src: url(../fonts/Robot_Font.otf);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{overflow: auto;}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: #dbe8ec;
+  }
+
+
 .section {
     width: 100%;
     height: 100vh;
-   
-   
 }
 
+.button-group{
+    align-items: baseline;
+}
 
 .btn-lateral{
     background-color: rgba(0, 0, 0, 0.7);
@@ -45,13 +60,8 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    
-        background-color: rgb(54, 4, 4);
-        
+        background-color: rgb(54, 4, 4);      
     }
-
-
-
 
 h1{
     font-family: CodePredators;
@@ -62,20 +72,21 @@ h1{
     url("../img/jaime_mejorado.png");
     background-color: #cccccc;
     height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   
 }
+
 
 .portafolio{
     background-image: linear-gradient(#000000b9, rgba(129, 127, 127, 0.5)),
     url("../img/Oficina_mamparas.jpg");
     background-color: #cccccc;
     height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .contact{
     background-image: linear-gradient(#000000b9, rgba(129, 127, 127, 0.5)),
@@ -91,7 +102,12 @@ h1{
     background-color: black;
 }
 
-.slide{
+.container{
+    width: 90%;
+    margin-left:-1rem;
+    margin-top: -7rem;
+    text-align: justify;
+    gap: 1rem;
     
 }
 .img-1{
@@ -100,20 +116,21 @@ h1{
     url("../img/jaime_mejorado.png");
     background-color: #cccccc;
     height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     
 }
 .img-2{
     
-    background-image: linear-gradient(#0f0f0fb9, rgba(129, 127, 127, 0.5)),
+    background-image: linear-gradient(#000000b9, rgba(129, 127, 127, 0.5)),
     url("../img/naturaleza-de-las-actitudes-de-los-trabajadores.jpg");
     background-color: #cccccc;
     height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -123,9 +140,9 @@ h1{
     url("../img/Oficina_mamparas.jpg");
     background-color: #cccccc;
     height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -137,6 +154,62 @@ h1{
    
 }
 
+.btn1{
+    background-image: linear-gradient(#000000b9, rgba(129, 127, 127, 0.5)),
+    url("../img/mision.jpg");
+     background-color: #cccccc;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+.btn2{
+    background-image: linear-gradient(#000000b9, rgba(129, 127, 127,0.5)),
+    url("../img/Breve-Historia-Construcción.jpg");
+     background-color: #cccccc;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+.btn3{
+    background-image: linear-gradient(#000000b9, rgba(129, 127, 127, 0.5)),
+    url("../img/constructora.jpg");
+     background-color: #cccccc;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+.btn4{
+    background-image: linear-gradient(#000000b9, rgba(129, 127, 127, 0.5)),
+    url("../img/cultura.jpg");
+     background-color: #cccccc;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+}
+.contenedor-2{
+  
+    margin-left: 10%;
+    margin-top: 20%;
+}
 
+.btn{
+    border: none;
+}
+.btnhover:hover{
+    background-image: linear-gradient(#000000b9, rgb(0, 0, 0));
+     background-color: #cccccc;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
